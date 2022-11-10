@@ -31,26 +31,6 @@
     b
     
   }
-
-  /* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: linear-gradient(57deg, #00C6A7 , #1E4D92 ); 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
   
   main {
     
@@ -282,8 +262,8 @@ left: 0;
 
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-image: linear-gradient(140deg, #272425, #fb0000);
-  color: white;
+  background: linear-gradient(57deg, #00C6A7 , #1E4D92 );
+  border-color: #23232e;
 }
 aside, .text white-font{
   line-height: 1.8rem;
