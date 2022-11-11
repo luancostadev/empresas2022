@@ -5,7 +5,7 @@
  <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link rel="icon" href="img/logo1.png">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -25,8 +25,14 @@
           </ul>
         </nav>
         <section>
-            <div class="leftside"> 
-             <img src="img/image12.png" width="100px" alt="">
+            <div class="leftside">
+              <!--Celular max: 460-->
+              <picture>
+                <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+                <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+                <source srcset="flowers.jpg">
+                <img src="img/image12.png" width="100px" alt="desenvolvedor_web">
+              </picture>
             </div>
             <div class="rightside"> 
              <h1>Empreendedorismo</h1>
