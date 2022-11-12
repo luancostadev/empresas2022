@@ -1,23 +1,26 @@
 *{
-    margin: 0; padding:0; box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    width: 100%;
-}
-* {
+    width: 100vw;
     margin: 0;
     padding: 0;
-  }
-  
+    box-sizing: inherit;
+}  
   a {
     color: #ffd700;
     text-decoration: none;
-    transition: 0.3s;
+    text-shadow: none;
+    transition: 0.2s;
   }
   
   a:hover {
     opacity: 0.7;
+    text-shadow: 4px 4px 2px #0000007a;
+    transition: 0.2s linear;
   }
-  
+
   .logo {
     font-size: 24px;
     text-transform: uppercase;
@@ -29,14 +32,8 @@
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    b
-    
   }
   
-  main {
-    
-   
-  }
   nav img{
     width: 210px;
     
@@ -45,14 +42,26 @@
   .nav-list {
     list-style: none;
     display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
   }
   
   .nav-list li {
+    width: 100%;
+    text-align: center;
     letter-spacing: 3px;
     margin-left: 32px;
     margin: 10px;
     margin-right: 10px;
     padding: 18px;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
   }
   
   .mobile-menu {
@@ -66,32 +75,6 @@
     background: #fff;
     margin: 8px;
     transition: 0.3s;
-  }
-  
-  @media (max-width: 999px) {
-    body {
-      overflow-x: hidden;
-    }
-    .nav-list {
-      position: absolute;
-      top: 8vh;
-      right: 0;
-      width: 50vw;
-      height: 92vh;
-      background: #23232e;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-    }
-    .nav-list li {
-      margin-left: 0;
-      opacity: 0;
-    }
-    .mobile-menu {
-      display: block;
-    }
   }
   
   .nav-list.active {
@@ -123,14 +106,12 @@
   
 
   header {
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 150vh;
     background: #0f8a9d;
     background: linear-gradient(57deg, #00C6A7 , #1E4D92 ); 
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
-
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
-
 
 nav{
     width: 100%; height: 100px;
@@ -179,10 +160,15 @@ nav{
 .menu ul li a:hover{
     color: white;
 }
-section{ display: flex;  }
 
+section{
+  display: flex;
+  width: 100vw;
+}
 
-
+.leftside {
+  width: 600px;
+}
 
 .leftside img{  
     width: 600px;  
@@ -198,32 +184,53 @@ section{ display: flex;  }
 
 
 
-.rightside{ width: 55%; height: 300px; color: white; text-align: center; margin-top: 80px; padding: 40px;}
+.rightside{
+  display: block;
+  width: 30vw;
+  height: 300px;
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 10rem;
+}
 
 .rightside h1{ text-align: center;
     color: #ffffff;
-    font-size: 50px;
+    font-size: 4vh;
     font-weight: 900;
-    text-transform: uppercase; } 
-
-.rightside p {  
-    font-size: 1.1rem; padding: 30px 0; }
-
-.rightside button{   font-size: 17px;
-    font-weight: 600;
-    color: white;
     text-transform: uppercase;
-    background: linear-gradient(57deg, #00C6A7 , #1E4D92 ); 
-    border-radius: 4px 4px 4px 4px;
-    padding: 20px 35px ; 
-    
+  }
+
+  .rightside h2{ text-align: center;
+    color: #ffffff;
+    font-size: 2vh;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .rightside_mobile {
+    display: none;
+  }
+
+button{
+  width: 50vh;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background-image: linear-gradient(237deg, #00C6A7 , #1E4D92 );
+  border-radius: 4px 4px 4px 4px;
+  padding: 20px 35px ;
+  box-shadow: none;
+  transition: box-shadow .2s linear;
 }
 
-
-
-.rightside button:hover{
-      background: linear-gradient(57deg, #1E4D92, #00C6A7 );   
+button:hover{
+  background-image: linear-gradient(57deg, #00C6A7 , #1E4D92 );
+  box-shadow: 5px 5px 5px 1px #0000007a;
+  transition: box-shadow .2s linear;
 }
+
 .sobre{
     margin-top: 40px;
     font-family: 'Montserrat' sans-serif;
@@ -251,7 +258,7 @@ left: 0;
 .image2:hover{
     left: -10px;
 }
-.sos{
+footer{
     text-align: center;
 }
 ::-webkit-scrollbar {
@@ -275,4 +282,110 @@ aside, .text white-font{
 #nige{
   line-height: 1.2rem;
   font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    height: 150vh;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+  }
+
+  section {
+    display: inline-block;
+  };
+
+  nav {
+    width: 100vw;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .leftside img{  
+    width: 80vw;
+    height: 80vw;  
+    position: relative;
+    right: 0;
+    transition: ease 0.5s;
+  }
+
+  .rightside {
+    display: none;
+    opacity: 0;
+  }
+  
+  .rightside h1 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .rightside h2{ text-align: center;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .rightside_mobile {
+    display: block;
+    opacity: 0;
+  }
+  
+  .rightside_mobile h1{
+    width: auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 4vh;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+  .rightside_mobile h2{ text-align: center;
+    width: auto;
+    color: #ffffff;
+    font-size: 2vh;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .rightside a {
+    width: 50vw;
+  }
+
+  button {
+    width: 50vw;
+    padding: 5vh, 0;
+    margin: 5vh, 0;
+  }
+
+  .nine {
+    width: 50vw;
+  }
+
 }

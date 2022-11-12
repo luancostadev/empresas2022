@@ -2,48 +2,52 @@
 <html>
 <head>
  <title>Empresas - Empreendedorismo</title>
+ <link rel="stylesheet" type="text/css" href="normalize.css">
  <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link rel="icon" href="img/logo1.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-    <header>
-        <nav>
-          <a class="logo" href="/"><img src="img/logo1.png" alt=""></a>
-          <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-          <ul class="nav-list">
-            <li><a href="#aa">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Empresas</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-        <section>
-            <div class="leftside">
-              <!--Celular max: 460-->
-              <picture>
-                <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
-                <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
-                <source srcset="flowers.jpg">
-                <img src="img/image12.png" width="100px" alt="desenvolvedor_web">
-              </picture>
-            </div>
-            <div class="rightside"> 
-             <h1>Empreendedorismo</h1>
-             <p>  Projeto de empresas   </p>
-             <a href="#lolo" class="nine"><button >Saiba mais</button></a>
-          
-      </header>
-      <main></main>
+  <header>
+    <nav>
+      <div>
+        <a class="logo" href="index.html">
+          <img src="img/logo1.png" alt="">
+        </a>
+      </div>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <div>
+        <ul class="nav-list">
+          <li><a href="index.html" class="navLinks">Início</a></li>
+          <li><a href="sobre.html" class="navLinks">Sobre</a></li>
+          <li><a href="#" class="navLinks">Empresas</a></li>
+          <li><a href="contatos.html" class="navLinks">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+        <div class="leftside">
+            <img src="img/image12.png" alt="desenvolvedor_web">
+        </div>
+        <div class="rightside"> 
+          <h1>Empreendedorismo</h1>
+          <h2>Projeto de Empresas</h2>
+          <a href="#objetivo" class="nine"><button onclick="setColor('button', '#101010')">Saiba Mais</button></a>
+         </div>
+         <div class="rightside_mobile"> 
+          <h1>Empreendedorismo</h1>
+          <h2>Projeto de Empresas</h2>
+          <a href="#objetivo" class="nine"><button onclick="setColor('button', '#101010')">Saiba Mais</button></a>
+         </div>
       <script src="mobile-navbar.js"></script>
 
   </div>
+
 
  </section>
 
@@ -51,20 +55,20 @@
 </div>
 </header>
 <div class="sobre">
- <span id="lolo"></span>
+ <span id="objetivo"></span>
  <div class="image2">
-    <img src="img/image11.png" alt="" style="float: right; width: 50%;">
+    <img src="img/image11.png" alt="" style="float: right; width: 50vw;">
 </div>
 <p style="margin-left: 20px;">Projeto baseia-se em uma ideia de construção de empresas, onde as turmas do 1°  colegial e 9° ano do ensino fundamental 2 se juntam em grupos, para, no dia do evento, prestar algum tipo de trabalho, sendo eles como: venda de salgado, projetos de arquitetura, origamis, estatísticas do projeto, informação e outros.<br>
     Ainda no projeto, como forma de objetivar, visamos a interligação e aprendizado dos alunos de ambo anos, aprendendo um pouco de empreendedorismo e matemática monetária, compreendendo assim tais disciplinas de forma mais “real”. </p>
 
 </div>
+<footer>
+  <p style="margin-top: 200px;">Desenvolvido por <b>Luan Costa & Enzo Trulenque</b> </p>
+  <p id="Creditos">Unicolégio &reg; Todos os direitos reservados</p>
+</footer>
 
-    
-<div class="sos">
-<p style="margin-top: 200px;">Desenvolvido por <b>Luan Costa & Enzo Trulenque</b> </p>
-<p id="Creditos">Unicolégio &reg; Todos os direitos reservados</p>
-</div>
+
 </body>
 </html>
 
