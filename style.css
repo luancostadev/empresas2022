@@ -3,22 +3,37 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+<<<<<<< HEAD
     width: 100vw;
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+=======
+    width: 100%;
+    margin: 0;
+    padding: 0;
+>>>>>>> 59017d23b92bebbd73d27c54aed34eeedcbe4a8f
 }  
   a {
     color: #ffd700;
     text-decoration: none;
     text-shadow: none;
+<<<<<<< HEAD
     transition: 0.2s;
+=======
+    transition: 0.3s;
+>>>>>>> 59017d23b92bebbd73d27c54aed34eeedcbe4a8f
   }
   
   a:hover {
     opacity: 0.7;
+<<<<<<< HEAD
     text-shadow: 4px 4px 2px #0000007a;
     transition: 0.2s linear;
+=======
+    text-shadow: 5px 5px 5px 1px #ff0000;
+    transition: 0.3s linear;
+>>>>>>> 59017d23b92bebbd73d27c54aed34eeedcbe4a8f
   }
 
   .logo {
@@ -199,6 +214,7 @@ section{
     font-size: 4vh;
     font-weight: 900;
     text-transform: uppercase;
+<<<<<<< HEAD
   }
 
   .rightside h2{ text-align: center;
@@ -226,6 +242,16 @@ button{
 }
 
 button:hover{
+=======
+    background-image: linear-gradient(237deg, #00C6A7 , #1E4D92 );
+    border-radius: 4px 4px 4px 4px;
+    padding: 20px 35px ;
+    box-shadow: none;
+    transition: box-shadow .2s linear;
+}
+
+.rightside button:hover{
+>>>>>>> 59017d23b92bebbd73d27c54aed34eeedcbe4a8f
   background-image: linear-gradient(57deg, #00C6A7 , #1E4D92 );
   box-shadow: 5px 5px 5px 1px #0000007a;
   transition: box-shadow .2s linear;
@@ -284,6 +310,7 @@ aside, .text white-font{
   font-size: 1.2rem;
 }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
 
   body {
@@ -388,4 +415,37 @@ aside, .text white-font{
     width: 50vw;
   }
 
+=======
+.restaurant-listing {
+  position: relative;
+  width: 41%;
+  height: min-content;
+  background: rgb(43,171,197);
+  border-width: 5px;
+  border-color: #000000;
+  border-radius: 5px;
+  margin: 2%;
+  padding-left: 2%;
+  transition: box-shadow 1s;
+  z-index: 1;
+}
+.restaurant-listing:hover{
+  box-shadow: 5px 5px 5px 1px #0000007a;
+}
+.restaurant-listing::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(172,80,242);
+  background: linear-gradient(20deg, rgba(172,80,242,1) 15%, rgba(43,171,197,1) 87%);
+  transition: opacity 0.5s linear;
+  z-index: -1;
+  opacity: 0;
+}
+.restaurant-listing:hover::before {
+  opacity: 1;
+>>>>>>> 59017d23b92bebbd73d27c54aed34eeedcbe4a8f
 }
