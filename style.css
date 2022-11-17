@@ -376,12 +376,60 @@ font-size: 1.2rem;
 }
 
 .icone {
-  width: 20px;
+  width: 1.5vw;
   float: left;
 }
 
 .iconeContatos {
   width: fit-content;
+}
+
+.contatos {
+  width: 50vw;
+}
+
+.contatos h1 {
+  padding-left: 3vw;
+  color: white;
+  width: fit-content;
+}
+
+.contatos h2 {
+  padding-left: 5vw;
+  color: white;
+  width: fit-content;
+}
+
+.contatos ul {
+  padding-left: 5vw;
+  width: 45vw;
+}
+
+.contatos li {
+  display: inline-block;
+  width: 45vw;
+}
+
+.contatos a {
+  font-size: 1.2vw;
+  width: fit-content;
+  padding: 1vh;
+}
+
+.contatos a:hover {
+  text-shadow: none;
+  color: #fff;
+  transition: linear 0.2s;
+  right: 10px;
+}
+
+
+.enzo {
+  padding-top: 3vh;
+}
+
+.desenvolvedores a {
+  padding-left: 1vw;
 }
 
 @media (max-width: 768px) {
