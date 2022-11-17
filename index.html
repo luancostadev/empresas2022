@@ -16,13 +16,21 @@
           <img src="img/logo1.png" alt="">
         </a>
       </div>
-      <div class="mobile-menu" class="dropdown">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-        <div class="dropdown-content">
-          <p>Hello World!</p>
-          </div>
+      <input id="check01" type="checkbox" name="menu"/>
+      <label for="check01" class="label-mobile-menu">
+        <div class="mobile-menu" class="dropdown">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </label>
+      <div class="submenu">
+        <ul>
+          <li><a href="index.html" class="mobileNavLinks">Início</a></li>
+          <li><a href="#objetivo" class="mobileNavLinks">Sobre</a></li>
+          <li><a href="#" class="mobileNavLinks">Empresas</a></li>
+          <li><a href="contatos.html" class="mobileNavLinks">Contato</a></li>
+        </ul>
       </div>
       <script src="mobile-navbar.js"></script>
       <div class="navDiv">
@@ -65,21 +73,23 @@
     </div>
  </section>
 </header>
-<div class="sobre">
- <span id="objetivo"></span>
- <div class="image2">
+<section class="corpo">
+  <div class="sobre">
+  <span id="objetivo"></span>
+  <div class="image2">
     <img src="img/image11.png" alt="" class="imagemObjetivo">
-</div>
-<p class="objetivo">
-  O projeto baseia-se em uma ideia de construção de empresas, onde as turmas do 1° ano do ensino médio e 9° ano do ensino fundamental se juntam em grupos, para, no dia do evento, prestar algum tipo de trabalho, sendo eles como: venda de salgado, projetos de arquitetura, origamis, estatísticas do projeto, informação e outros.
-</p>
-<div class="image2Mobile">
-  <img src="img/image11.png" alt="">
-</div>
-<p class="objetivo">
-  Ainda no projeto, como forma de objetivar, visamos a interligação e aprendizado dos alunos de ambos os anos, aprendendo um pouco de empreendedorismo e matemática monetária, compreendendo assim tais disciplinas de forma prática.
-</p>
-</div>
+  </div>
+  <p class="objetivo">
+    O projeto baseia-se em uma ideia de construção de empresas, onde as turmas do 1° ano do ensino médio e 9° ano do ensino fundamental se juntam em grupos, para, no dia do evento, prestar algum tipo de trabalho, sendo eles como: venda de salgado, projetos de arquitetura, origamis, estatísticas do projeto, informação e outros.
+  </p>
+  <div class="image2Mobile">
+    <img src="img/image11.png" alt="">
+  </div>
+  <p class="objetivo">
+    Ainda no projeto, como forma de objetivar, visamos a interligação e aprendizado dos alunos de ambos os anos, aprendendo um pouco de empreendedorismo e matemática monetária, compreendendo assim tais disciplinas de forma prática.
+  </p>
+  </div>
+</section>
 <footer>
   <p>Desenvolvido por <b>Luan Costa & Enzo Trulenque</b> </p>
   <p id="Creditos">Unicolégio &reg; Todos os direitos reservados</p>

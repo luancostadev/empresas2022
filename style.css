@@ -378,6 +378,7 @@ font-size: 1.2rem;
 .icone {
   width: 1.5vw;
   float: left;
+  padding: 1vh 0;
 }
 
 .iconeContatos {
@@ -413,16 +414,16 @@ font-size: 1.2rem;
 .contatos a {
   font-size: 1.2vw;
   width: fit-content;
-  padding: 1vh;
+  align-items: center;
+  display: inline-flex;
 }
 
 .contatos a:hover {
   text-shadow: none;
-  color: #fff;
+  color: rgb(255, 255, 255);
   transition: linear 0.2s;
-  right: 10px;
+  margin-left: 10px;
 }
-
 
 .enzo {
   padding-top: 3vh;
@@ -430,6 +431,19 @@ font-size: 1.2rem;
 
 .desenvolvedores a {
   padding-left: 1vw;
+}
+
+.headerContatos {
+  height: 85vh;
+}
+
+.footerContatos {
+  padding-top: 5vh;
+}
+
+input, div.submenu {
+  display: none;
+  opacity: 0;
 }
 
 @media (max-width: 768px) {
@@ -474,6 +488,10 @@ nav {
   display: block;
   width: fit-content;
   padding-right: 10vw;
+}
+
+.label-mobile-menu {
+  width: fit-content;
 }
 
 .leftside {
@@ -628,6 +646,38 @@ footer {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+input, div.submenu {
+  position: absolute;
+  background: linear-gradient(180deg, #000000 , #3d3d3d9a 1000%); 
+  top: 35vh;
+  bottom: 0vh;
+  left: 0vw;
+  right: 0vw;
+  height: 100vh;
+  width: 100vw;
+  box-shadow: 0px 8px 16px rgb(0 0 0 / 20%);
+  z-index: 100000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.35s ease-out;
+}
+
+input:checked~div.submenu {
+  position: fixed;
+  
+  display: block;
+  opacity: 1;
+  outline: none;
+  transform: translateY(-20vh);
+  visibility: visible;
+  opacity: 1;
+  transition: 0.35s ease-out;
+}
+
+.mobileNavLinks a {
+  color: #fff;
 }
 
 }
