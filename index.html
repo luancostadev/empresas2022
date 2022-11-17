@@ -16,22 +16,16 @@
           <img src="img/logo1.png" alt="">
         </a>
       </div>
-      <input id="check01" type="checkbox" name="menu"/>
-      <label for="check01" class="label-mobile-menu">
-        <div class="mobile-menu" class="dropdown">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </label>
-      <div class="submenu">
-        <ul>
-          <li><a href="index.html" class="mobileNavLinks">Início</a></li>
-          <li><a href="#objetivo" class="mobileNavLinks">Sobre</a></li>
-          <li><a href="#" class="mobileNavLinks">Empresas</a></li>
-          <li><a href="contatos.html" class="mobileNavLinks">Contato</a></li>
-        </ul>
-      </div>
+      <span class="menubtn" onclick="openNav()">&#9776;</span>
+      <script>
+        function openNav() {
+          document.getElementById("sidenav").style.cssText = "width: 80vw; box-shadow: 10vw 10vw 10vw 10vw black";
+        }
+        function closeNav() {
+          document.getElementById("sidenav").style.cssText = "width: 0vw; box-shadow: none";
+
+        }
+      </script>
       <script src="mobile-navbar.js"></script>
       <div class="navDiv">
         <ul class="nav-list">
@@ -42,7 +36,7 @@
         </ul>
       </div>
     </nav>
-    <section>
+    <section class="sectionHeader">
     </div>
     <div class="rightside_mobile"> 
      <h1>Empreendedorismo</h1>
@@ -74,6 +68,16 @@
  </section>
 </header>
 <section class="corpo">
+  <div class="sideNav" id="sidenav" style="width: 0vw; box-shadow: none;">
+    <div class="sideNavTop">
+    <p class="mobileNavLinks">Menu</p>
+    <a href="#" class="closeBtn" onclick="closeNav()">&#10006;</a>
+    </div>
+    <a href="index.html" class="mobileNavLinks">Início</a>
+    <a href="#objetivo" class="mobileNavLinks">Sobre</a>
+    <a href="#" class="mobileNavLinks">Empresas</a>
+    <a href="contatos.html" class="mobileNavLinks">Contato</a>
+  </div>
   <div class="sobre">
   <span id="objetivo"></span>
   <div class="image2">

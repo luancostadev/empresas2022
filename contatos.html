@@ -16,14 +16,16 @@
           <img src="img/logo1.png" alt="">
         </a>
       </div>
-      <div class="mobile-menu" class="dropdown">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-        <div class="dropdown-content">
-          <p>Hello World!</p>
-          </div>
-      </div>
+      <span class="menubtn" onclick="openNav()">&#9776;</span>
+      <script>
+        function openNav() {
+          document.getElementById("sidenav").style.cssText = "width: 80vw; box-shadow: 10vw 10vw 10vw 10vw black";
+        }
+        function closeNav() {
+          document.getElementById("sidenav").style.cssText = "width: 0vw; box-shadow: none";
+
+        }
+      </script>
       <script src="mobile-navbar.js"></script>
       <div class="navDiv">
         <ul class="nav-list">
@@ -34,7 +36,17 @@
         </ul>
       </div>
     </nav>
-    <section>
+    <section class="sectionContatos">
+      <div class="sideNav" id="sidenav" style="width: 0vw; box-shadow: none;">
+        <div class="sideNavTop">
+        <p class="mobileNavLinks">Menu</p>
+        <a href="#" class="closeBtn" onclick="closeNav()">&#10006;</a>
+        </div>
+        <a href="index.html" class="mobileNavLinks">Início</a>
+        <a href="#objetivo" class="mobileNavLinks">Sobre</a>
+        <a href="#" class="mobileNavLinks">Empresas</a>
+        <a href="contatos.html" class="mobileNavLinks">Contato</a>
+      </div>
         <div class="contatos">
             <h1>Unicolégio Objetivo</h1>
             <ul>
@@ -44,6 +56,7 @@
                 <li><a href="https://www.google.com/maps/place/Unicolégio+Objetivo+Araçatuba/@-21.2005618,-50.4550663,15z/data=!4m5!3m4!1s0x0:0x8a5b0c6480ebaef7!8m2!3d-21.2005735!4d-50.4550875"><img src="img/endereco.png" alt="iconeEndereco" class="icone">&nbsp;Av. Waldemar Alves, 1355 - Vila Industrial, Araçatuba - SP</a></li>
                 <li><a href="tel:01821027443"><img src="img/telefone.png" alt="iconeTelefone" class="icone">&nbsp;(18) 2102-7443</a></li>
             </ul>
+            <hr class="hr2">
             <div class="desenvolvedores">
                 <h1>Desenvolvedores</h1>
                 <h2>&bull;&nbsp;Luan Costa</h2>
@@ -56,8 +69,11 @@
                     <li><a href="https://github.com/EnzoTrulenque"><img src="img/github.png" alt="iconeGithub" class="icone">&nbsp;Github</a></li>
                     <li><a href="https://www.linkedin.com/in/enzo-trulenque-evangelista/"><img src="img/linkedin.png" alt="iconeLinkedin" class="icone">&nbsp;LinkedIn</a></li>
                 </ul>
-        </div>
             </div>
+        </div>
+        <div class="img3Div">
+          <img src="img/img3.png" alt="imagemDeDesenvolvedores" class="img3">
+        </div>
     </section>
 </header>
 <footer class="footerContatos">
